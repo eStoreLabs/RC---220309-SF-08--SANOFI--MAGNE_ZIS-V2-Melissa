@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magne-B6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      
+@font-face {
+font-family: "Lucida-Grande";
+src: url(./assets/Lucida-Grande-Regular-Font.ttf) format("woff2"),
+url(./assets/Lucida-Grande-Regular-Font.ttf) format("woff");
+}
+
+@-webkit-keyframes pulse_anim {
+0% {
+-webkit-box-shadow: 0 0 5px #fff;
+box-shadow: 0 0 5px #fff;
+}
+50% {
+-webkit-box-shadow: 0 0 45px #fff;
+box-shadow: 0 0 45px #fff;
+}
+100% {
+-webkit-box-shadow: 0 0 5px #fff;
+box-shadow: 0 0 5px #fff;
+}
+}
+@keyframes showTable {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes pulse_anim {
+0% {
+-webkit-box-shadow: 0 0 5px #fff;
+box-shadow: 0 0 5px #fff;
+}
+50% {
+-webkit-box-shadow: 0 0 45px #fff;
+box-shadow: 0 0 45px #fff;
+}
+100% {
+-webkit-box-shadow: 0 0 5px #fff;
+box-shadow: 0 0 5px #fff;
+}
+}
+@-webkit-keyframes pulse_anim_small {
+0% {
+-webkit-box-shadow: 0 0 3px #fff;
+box-shadow: 0 0 3px #fff;
+}
+50% {
+-webkit-box-shadow: 0 0 30px #fff;
+box-shadow: 0 0 30px #fff;
+}
+100% {
+-webkit-box-shadow: 0 0 3px #fff;
+box-shadow: 0 0 3px #fff;
+}
+}
+@keyframes pulse_anim_small {
+0% {
+-webkit-box-shadow: 0 0 3px #fff;
+box-shadow: 0 0 3px #fff;
+}
+50% {
+-webkit-box-shadow: 0 0 30px #fff;
+box-shadow: 0 0 30px #fff;
+}
+100% {
+-webkit-box-shadow: 0 0 3px #fff;
+box-shadow: 0 0 3px #fff;
+}
+}
+@-webkit-keyframes show_table {
+0% {
+display: -webkit-box;
+display: flex;
+}
+100% {
+display: none;
+}
+}
+@keyframes show_table {
+0% {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+}
+100% {
+display: none;
+}
+}
+@-webkit-keyframes thrill {
+0% {
+-webkit-transform: scale3d(1, 1, 1);
+transform: scale3d(1, 1, 1);
+}
+30% {
+-webkit-transform: scale3d(1.15, 0.85, 1);
+transform: scale3d(1.15, 0.85, 1);
+}
+40% {
+-webkit-transform: scale3d(0.85, 1.15, 1);
+transform: scale3d(0.85, 1.15, 1);
+}
+50% {
+-webkit-transform: scale3d(1.05, 0.95, 1);
+transform: scale3d(1.05, 0.95, 1);
+}
+65% {
+-webkit-transform: scale3d(0.95, 1.05, 1);
+transform: scale3d(0.95, 1.05, 1);
+}
+75% {
+-webkit-transform: scale3d(1.05, 0.95, 1);
+transform: scale3d(1.05, 0.95, 1);
+}
+100% {
+-webkit-transform: scale3d(1, 1, 1);
+transform: scale3d(1, 1, 1);
+}
+}
+@keyframes thrill {
+0% {
+-webkit-transform: scale3d(1, 1, 1);
+transform: scale3d(1, 1, 1);
+}
+30% {
+-webkit-transform: scale3d(1.15, 0.85, 1);
+transform: scale3d(1.15, 0.85, 1);
+}
+40% {
+-webkit-transform: scale3d(0.85, 1.15, 1);
+transform: scale3d(0.85, 1.15, 1);
+}
+50% {
+-webkit-transform: scale3d(1.05, 0.95, 1);
+transform: scale3d(1.05, 0.95, 1);
+}
+65% {
+-webkit-transform: scale3d(0.95, 1.05, 1);
+transform: scale3d(0.95, 1.05, 1);
+}
+75% {
+-webkit-transform: scale3d(1.05, 0.95, 1);
+transform: scale3d(1.05, 0.95, 1);
+}
+100% {
+-webkit-transform: scale3d(1, 1, 1);
+transform: scale3d(1, 1, 1);
+}
+}
+@-webkit-keyframes es-pulse {
+0% {
+-webkit-transform: scale(0.95);
+transform: scale(0.95);
+-webkit-box-shadow: 0 0 0 0 #25387e;
+box-shadow: 0 0 0 0 #25387e;
+}
+70% {
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+-webkit-box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+}
+to {
+-webkit-transform: scale(0.95);
+transform: scale(0.95);
+-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+}
+}
+@keyframes es-pulse {
+0% {
+-webkit-transform: scale(0.95);
+transform: scale(0.95);
+-webkit-box-shadow: 0 0 0 0 #25387e;
+box-shadow: 0 0 0 0 #25387e;
+}
+70% {
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+-webkit-box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+}
+to {
+-webkit-transform: scale(0.95);
+transform: scale(0.95);
+-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+}
+}
+@-webkit-keyframes es-pulse2 {
+0% {
+-webkit-transform: scale(1);
+transform: scale(1);
+-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+}
+70% {
+-webkit-transform: scale(1.07);
+transform: scale(1.07);
+-webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+}
+to {
+-webkit-transform: scale(1);
+transform: scale(1);
+-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+}
+}
+@keyframes es-pulse2 {
+0% {
+-webkit-transform: scale(1);
+transform: scale(1);
+-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+}
+70% {
+-webkit-transform: scale(1.07);
+transform: scale(1.07);
+-webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+}
+to {
+-webkit-transform: scale(1);
+transform: scale(1);
+-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+}
+}
+@-webkit-keyframes es-pulse3 {
+0% {
+-webkit-transform: scale(0.95);
+transform: scale(0.95);
+}
+70% {
+-webkit-transform: scale(1.05);
+transform: scale(1.05);
+}
+to {
+-webkit-transform: scale(0.95);
+transform: scale(0.95);
+}
+}
+@keyframes es-pulse3 {
+0% {
+-webkit-transform: scale(0.95);
+transform: scale(0.95);
+}
+70% {
+-webkit-transform: scale(1.05);
+transform: scale(1.05);
+}
+to {
+-webkit-transform: scale(0.95);
+transform: scale(0.95);
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 {
+font-family: "Signika", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.2;
+max-width: 790px;
+min-width: 320px;
+margin: 0 auto;
+padding: 0;
+color: #fff;
+background-color: #25387e;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 * {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 h2,
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 h3,
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 h4,
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 h5 {
+font-family: "Signika", sans-serif;
+color: #fff;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 sup {
+margin: 0;
+padding: 0;
+line-height: inherit;
+color: inherit;
+font-family: inherit;
+font-weight: inherit;
+font-size: 0.6em;
+margin-left: -4px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-GEN__sub {
+margin: 0;
+padding: 0;
+line-height: inherit;
+color: inherit;
+font-family: inherit;
+font-weight: inherit;
+font-size: 0.6em;
+margin-left: -2px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv {
+position: relative;
+z-index: 20;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__bg {
+position: relative;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__bgImg {
+max-width: 100%;
+display: block;
+margin: 0 auto;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__marginCnt {
+width: 100%;
+height: 50px;
+background-color: #00b1b8;
+display: none;
+}
+@media screen and (max-width: 950px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__marginCnt {
+display: block;
+}
+}
+@media screen and (max-width: 620px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__marginCnt {
+height: 75px;
+}
+}
+@media screen and (max-width: 460px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__marginCnt {
+height: 125px;
+}
+}
+@media screen and (max-width: 410px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__marginCnt {
+height: 155px;
+}
+}
+@media screen and (max-width: 400px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__marginCnt {
+height: 100px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__mainContent {
+position: absolute;
+width: 100%;
+top: 0;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__imgCnt {
+margin-top: 10%;
+width: 100%;
+position: relative;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick,
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-line,
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-text {
+position: absolute;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick {
+width: 9.17%;
+height: auto;
+border-radius: 50%;
+-webkit-animation: es-pulse 2s infinite;
+animation: es-pulse 2s infinite;
+z-index: 5;
+cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick {
+width: 12%;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-1 {
+top: 36.5%;
+left: 18%;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-2 {
+top: 90.7%;
+left: 45.8%;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-3 {
+top: 35%;
+left: 72.8%;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-line {
+opacity: 0;
+-webkit-transition: 0.4s ease-in-out;
+-o-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+pointer-events: none;
+height: auto;
+}
+@media screen and (max-width: 900px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-line {
+-webkit-transition: 0.15s ease-in-out;
+-o-transition: 0.15s ease-in-out;
+transition: 0.15s ease-in-out;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-line-1 {
+top: 47%;
+left: 21.7%;
+width: 15.58%;
+}
+@media screen and (max-width: 1100px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-line-1 {
+width: 13%;
+}
+}
+@media screen and (max-width: 500px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-line-1 {
+left: 23%;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-line-2 {
+top: 105%;
+left: 49.5%;
+width: 2%;
+}
+@media screen and (max-width: 1100px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-line-2 {
+width: 1.25%;
+}
+}
+@media screen and (max-width: 500px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-line-2 {
+width: 1.25%;
+left: 51%;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-line-3 {
+top: 50%;
+left: 60.5%;
+width: 16.92%;
+}
+@media screen and (max-width: 1100px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-line-3 {
+width: 14%;
+left: 63.5%;
+}
+}
+@media screen and (max-width: 500px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-line-3 {
+left: 64.75%;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-line--show {
+opacity: 1;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-text {
+text-align: center;
+width: 100%;
+left: 0;
+-webkit-transform: translateY(50px);
+-ms-transform: translateY(50px);
+transform: translateY(50px);
+top: 146%;
+opacity: 0;
+-webkit-transition: 0.4s ease-in-out;
+-o-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+padding: 0 20%;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-text--show {
+opacity: 1;
+-webkit-transform: translateY(0);
+-ms-transform: translateY(0);
+transform: translateY(0);
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-text * {
+margin: 0;
+}
+@media screen and (max-width: 1100px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-text {
+top: 130%;
+}
+}
+@media screen and (max-width: 950px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-text {
+padding: 0 5%;
+}
+}
+@media screen and (max-width: 900px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-text {
+-webkit-transition: 0.15s ease-in-out;
+-o-transition: 0.15s ease-in-out;
+transition: 0.15s ease-in-out;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-title {
+font-size: 24px;
+font-weight: 600;
+width: 85%;
+margin: 0 auto;
+margin-bottom: 0.6em;
+}
+@media screen and (max-width: 950px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-title {
+font-size: 24px;
+}
+}
+@media screen and (max-width: 900px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-title {
+background-color: #25387e;
+}
+}
+@media screen and (max-width: 650px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-title {
+margin-bottom: 0.3em;
+}
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-title {
+font-size: 22px;
+margin-bottom: 1.5em;
+}
+}
+@media screen and (max-width: 500px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-title {
+margin-bottom: 0.75em;
+width: 95%;
+}
+}
+@media screen and (max-width: 460px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-title {
+margin-bottom: 1.75em;
+}
+}
+@media screen and (max-width: 400px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-title {
+font-size: 16px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-desc {
+font-size: 21px;
+font-weight: 300;
+}
+@media screen and (max-width: 950px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-desc {
+font-size: 16px;
+}
+}
+@media screen and (max-width: 500px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-desc {
+font-size: 14px;
+}
+}
+@media screen and (max-width: 410px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-desc {
+background-color: rgba(37, 56, 125, 0.7);
+border-radius: 5px;
+padding: 2px;
+}
+}
+@media screen and (max-width: 400px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__content-tick-desc {
+margin-top: -10px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__plantImg,
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__productImg {
+max-width: 100%;
+display: block;
+margin: 0 auto;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__plant {
+width: 50%;
+position: absolute;
+top: 1.6%;
+left: 6.7%;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__product {
+position: relative;
+z-index: 2;
+width: 48%;
+margin: 0 auto;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__titleCnt {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+display: inline-block;
+position: relative;
+top: 0;
+left: 21%;
+padding-top: 5.75%;
+}
+@media screen and (max-width: 960px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__titleCnt {
+left: 18%;
+}
+}
+@media screen and (max-width: 800px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__titleCnt {
+left: 12%;
+}
+}
+@media screen and (max-width: 750px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__titleCnt {
+width: 100%;
+left: 0;
+text-align: center;
+padding-right: 50px;
+padding-left: 50px;
+}
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__titleCnt {
+width: 100%;
+left: 0;
+text-align: center;
+padding-right: 20px;
+padding-left: 20px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__subTitle {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: start;
+-ms-flex-align: start;
+align-items: flex-start;
+-webkit-box-pack: end;
+-ms-flex-pack: end;
+justify-content: flex-end;
+position: relative;
+top: 0px;
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__subTitle {
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__titleItem {
+margin: 0;
+padding: 0;
+line-height: inherit;
+color: inherit;
+font-family: inherit;
+font-weight: inherit;
+font-family: "Lucida-Grande", sans-serif;
+font-weight: 700;
+margin-bottom: -2vw;
+font-size: 90px;
+margin-bottom: -12px;
+letter-spacing: -0.5px;
+/*  @media screen and (max-width: 900px) {
+font-size: 90px;
+} */
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__titleItem:nth-child(2) {
+letter-spacing: 0.25px;
+margin-bottom: -20px;
+}
+@media screen and (max-width: 750px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__titleItem {
+font-size: 75px;
+line-height: 1.45;
+}
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__titleItem {
+font-size: 55px;
+}
+}
+@media screen and (max-width: 400px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__titleItem {
+font-size: 40px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__subTitleItem {
+margin: 0;
+padding: 0;
+line-height: inherit;
+color: inherit;
+font-family: inherit;
+font-weight: inherit;
+font-family: "Lucida-Grande", sans-serif;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+font-size: 100px;
+margin-top: 2px;
+/*   @media screen and (max-width: 900px) {
+font-size: 100px;
+} */
+}
+@media screen and (max-width: 750px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__subTitleItem {
+font-size: 80px;
+}
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__subTitleItem {
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+}
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__subTitleItem {
+font-size: 60px;
+margin-top: 10px;
+}
+}
+@media screen and (max-width: 400px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__subTitleItem {
+font-size: 46px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__subTitleItem:nth-child(1) {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-item-align: start;
+align-self: flex-start;
+-webkit-box-pack: end;
+-ms-flex-pack: end;
+justify-content: flex-end;
+font-size: 64px;
+margin-right: 5px;
+/*  @media screen and (max-width: 900px) {
+font-size: 64px;
+} */
+}
+@media screen and (max-width: 900px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__subTitleItem:nth-child(1) {
+font-size: 54px;
+}
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__subTitleItem:nth-child(1) {
+font-size: 40px;
+}
+}
+@media screen and (max-width: 400px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__subTitleItem:nth-child(1) {
+font-size: 32px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-kv__subTitleItem:nth-child(2) {
+color: #ed1d23;
+line-height: 1;
+letter-spacing: -0.5px;
+font-weight: 800;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben {
+position: relative;
+z-index: 10;
+top: -650px;
+margin-bottom: -650px;
+}
+@media screen and (max-width: 800px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben {
+top: -200px;
+margin-bottom: -200px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__marginCnt {
+width: 100%;
+height: 120px;
+background-color: #25387e;
+}
+@media screen and (max-width: 900px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__marginCnt {
+height: 200px;
+}
+}
+@media screen and (max-width: 800px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__marginCnt {
+height: 500px;
+}
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__marginCnt {
+height: 600px;
+}
+}
+@media screen and (max-width: 500px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__marginCnt {
+height: 650px;
+}
+}
+@media screen and (max-width: 450px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__marginCnt {
+height: 220px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__bg {
+position: relative;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__bgImg {
+max-width: 100%;
+display: block;
+margin: 0 auto;
+}
+@media screen and (max-width: 450px) {
+    #es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__bg img {
+    display: none;
+    }
+    }
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elements {
+position: absolute;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-pack: distribute;
+justify-content: space-around;
+width: 100%;
+top: 735px;
+}
+@media screen and (max-width: 800px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elements {
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+top: 18%;
+}
+}
+@media screen and (max-width: 450px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elements {
+position: sticky;
+background-color: #25387e;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elementCnt {
+position: relative;
+width: 30%;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+}
+@media screen and (max-width: 800px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elementCnt {
+width: 50%;
+margin-bottom: 10px;
+}
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elementCnt {
+width: 60%;
+margin-bottom: 30px;
+}
+}
+@media screen and (max-width: 500px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elementCnt {
+width: 65%;
+}
+}
+@media screen and (max-width: 400px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elementCnt {
+width: 80%;
+margin-bottom: 10px;
+}
+}
+@media screen and (max-width: 350px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elementCnt {
+width: 85%;
+margin-bottom: 10px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elementCnt:nth-child(1) {
+-webkit-box-align: end;
+-ms-flex-align: end;
+align-items: flex-end;
+}
+@media screen and (max-width: 800px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elementCnt:nth-child(1) {
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elementCnt:nth-child(3) {
+-webkit-box-align: start;
+-ms-flex-align: start;
+align-items: flex-start;
+}
+@media screen and (max-width: 800px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elementCnt:nth-child(3) {
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__iconImgCnt {
+width: 140px;
+border-radius: 50%;
+position: relative;
+z-index: 5;
+-webkit-transition: ease-in-out 0.3s transform;
+-o-transition: ease-in-out 0.3s transform;
+transition: ease-in-out 0.3s transform;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__iconImgCnt:hover {
+-webkit-animation: pulse_anim 2s ease-in-out infinite;
+animation: pulse_anim 2s ease-in-out infinite;
+background-color: #d9d9d9;
+-webkit-transform: scale(1.05);
+-ms-transform: scale(1.05);
+transform: scale(1.05);
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__iconImgCnt.es-ben-middle {
+position: relative;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1
+.es-ben__iconImgCnt.es-ben-middle
+.es-ben__iconImg {
+position: relative;
+z-index: 2;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben .es-ben-pill {
+position: absolute;
+top: 42%;
+left: 35%;
+width: 60%;
+z-index: 1;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__iconImg {
+max-width: 100%;
+display: block;
+margin: 0 auto;
+width: 150px;
+margin-top: -60px;
+
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elementTitle {
+position: relative;
+z-index: 10;
+margin-top: 26px;
+font-size: 20px;
+font-weight: 700;
+letter-spacing: 1px;
+text-align: center;
+/* @media screen and (max-width: 1100px) {
+font-size: 26px;
+} */
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elementTitle.es-ben__firstTitle {
+margin-top: 30px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elementTitle.es-ben__thirdTitle {
+margin-top: 30px;
+}
+@media screen and (max-width: 950px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elementTitle {
+font-size: 22px;
+}
+}
+@media screen and (max-width: 800px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elementTitle {
+font-size: 20px;
+}
+}
+@media screen and (max-width: 550px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ben__elementTitle {
+font-size: 18px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash {
+position: relative;
+z-index: 5;
+top: -350px;
+}
+@media screen and (max-width: 800px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash {
+top: -370px;
+}
+}
+@media screen and (max-width: 450px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash {
+top: -300px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__bg {
+position: relative;
+background-color: #25387e;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__bgImg {
+max-width: 100%;
+display: block;
+margin: 0 auto;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__marginCnt {
+width: 100%;
+height: 100px;
+background-color: #00b1b8;
+display: none;
+}
+@media screen and (max-width: 1050px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__marginCnt {
+display: block;
+}
+}
+@media screen and (max-width: 950px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__marginCnt {
+height: 200px;
+}
+}
+@media screen and (max-width: 850px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__marginCnt {
+height: 250px;
+}
+}
+@media screen and (max-width: 750px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__marginCnt {
+height: 300px;
+}
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__marginCnt {
+height: 400px;
+}
+}
+@media screen and (max-width: 550px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__marginCnt {
+height: 450px;
+}
+}
+@media screen and (max-width: 450px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__marginCnt {
+height: 550px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content {
+text-align: center;
+position: absolute;
+top: 460px;
+left: 0;
+-webkit-transition: ease-in-out 0.3s;
+-o-transition: ease-in-out 0.3s;
+transition: ease-in-out 0.3s;
+}
+@media screen and (max-width: 1200px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content {
+top: 475px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content.move {
+top: 380px;
+}
+@media screen and (max-width: 1200px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content.move {
+top: 425px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-images {
+position: relative;
+padding-bottom: 11.5%;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-title {
+font-family: "Lucida-Grande", sans-serif;
+font-size: 80px;
+font-weight: 600;
+margin: 0;
+}
+@media screen and (max-width: 900px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-title {
+font-size: 80px;
+}
+}
+@media screen and (max-width: 700px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-title {
+font-size: 60px;
+margin-top: -25px;
+margin-bottom: 25px;
+}
+}
+@media screen and (max-width: 500px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-title {
+font-size: 40px;
+}
+}
+@media screen and (max-width: 400px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-title {
+font-size: 32px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-plant {
+position: relative;
+top: -45px;
+width: 57.17%;
+height: auto;
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-plant {
+width: 80%;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick,
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-line,
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-text {
+position: absolute;
+
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick {
+width: 6.75%;
+height: auto;
+border-radius: 50%;
+-webkit-animation: es-pulse 2s infinite;
+animation: es-pulse 2s infinite;
+z-index: 5;
+cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick {
+width: 10%;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-1 {
+top: 46.5%;
+left: 24%;
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-1 {
+top: 48%;
+left: 12%;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-2 {
+top: 23.7%;
+left: 37%;
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-2 {
+top: 23.7%;
+left: 32%;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-3 {
+top: 37%;
+left: 47%;
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-3 {
+top: 36%;
+left: 45%;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-4 {
+top: 23.7%;
+left: 58.7%;
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-4 {
+left: 63%;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-5 {
+top: 51.2%;
+left: 61%;
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-5 {
+left: 66%;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-line {
+opacity: 0;
+-webkit-transition: 0.4s ease-in-out;
+-o-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+pointer-events: none;
+height: auto;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-line-1 {
+top: 50.5%;
+left: 16%;
+width: 10%;
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-line-1 {
+-webkit-transform: scaleY(-1);
+-ms-transform: scaleY(-1);
+transform: scaleY(-1);
+top: 52.5%;
+left: 8%;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-line-2 {
+top: 27.5%;
+left: 15%;
+width: 24.33%;
+}
+@media screen and (max-width: 750px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-line-2 {
+width: 26%;
+}
+}
+@media screen and (max-width: 700px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-line-2 {
+-webkit-transform: scaleX(1.2);
+-ms-transform: scaleX(1.2);
+transform: scaleX(1.2);
+left: 12%;
+}
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-line-2 {
+top: 31%;
+left: 8%;
+-webkit-transform: scaleY(1.1) scaleX(1);
+-ms-transform: scaleY(1.1) scaleX(1);
+transform: scaleY(1.1) scaleX(1);
+}
+}
+@media screen and (max-width: 450px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-line-2 {
+top: 31%;
+left: 5%;
+-webkit-transform: scaleY(1.1) scaleX(1.2);
+-ms-transform: scaleY(1.1) scaleX(1.2);
+transform: scaleY(1.1) scaleX(1.2);
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-line-3 {
+top: 38%;
+left: 49.5%;
+width: 2%;
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-line-3 {
+top: 42%;
+left: 49%;
+-webkit-transform: scaleY(1.1);
+-ms-transform: scaleY(1.1);
+transform: scaleY(1.1);
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-line-4 {
+top: 29%;
+left: 62%;
+width: 22.67%;
+}
+@media screen and (max-width: 700px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-line-4 {
+top: 30%;
+left: 64%;
+width: 22.67%;
+-webkit-transform: scaleY(1.05);
+-ms-transform: scaleY(1.05);
+transform: scaleY(1.05);
+}
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-line-4 {
+top: 31.5%;
+left: 72%;
+-webkit-transform: scaleY(1.1);
+-ms-transform: scaleY(1.1);
+transform: scaleY(1.1);
+}
+}
+@media screen and (max-width: 450px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-line-4 {
+top: 33%;
+left: 72%;
+-webkit-transform: scaleY(1.2);
+-ms-transform: scaleY(1.2);
+transform: scaleY(1.2);
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-line-5 {
+top: 55%;
+left: 65%;
+width: 19.5%;
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-line-5 {
+top: 56%;
+left: 72%;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-line--show {
+opacity: 1;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-text {
+letter-spacing: 1.75px;
+text-align: center;
+width: 100%;
+margin: 0;
+font-size: 24px;
+font-weight: 600;
+left: 0;
+-webkit-transform: translateY(50px);
+-ms-transform: translateY(50px);
+transform: translateY(50px);
+top: 85%;
+opacity: 0;
+-webkit-transition: 0.4s ease-in-out;
+-o-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-text--show {
+opacity: 1;
+-webkit-transform: translateY(0);
+-ms-transform: translateY(0);
+transform: translateY(0);
+}
+@media screen and (max-width: 950px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-text {
+width: 50%;
+left: 50%;
+-webkit-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+transform: translateX(-50%);
+top: 82%;
+font-size: 22px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-text > br {
+display: none;
+}
+}
+@media screen and (max-width: 700px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-text {
+top: 82%;
+font-size: 23px;
+width: 55%;
+}
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-text {
+top: 75%;
+font-size: 21px;
+width: 65%;
+}
+}
+@media screen and (max-width: 400px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-text {
+font-size: 18px;
+}
+}
+@media screen and (max-width: 350px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-tick-text {
+font-size: 17px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-texts {
+font-size: 15px;
+width: 60%;
+margin: 0 auto;
+line-height: 1.3;
+font-weight: 300;
+}
+@media screen and (max-width: 750px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-texts {
+margin-top: 30px;
+}
+}
+@media screen and (max-width: 700px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-texts {
+font-size: 15px;
+}
+}
+@media screen and (max-width: 600px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-texts {
+margin-top: -30px;
+width: 90%;
+}
+}
+@media screen and (max-width: 500px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-texts {
+margin-top: -10px;
+width: 90%;
+}
+}
+@media screen and (max-width: 400px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-texts {
+font-size: 15px;
+margin-top: 20px;
+}
+}
+@media screen and (max-width: 350px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-texts {
+font-size: 14px;
+margin-top: 25px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-downTick {
+font-size: 32px;
+font-weight: 400;
+-webkit-transform: rotate(90deg) scaleY(2.5) scaleX(1.5);
+-ms-transform: rotate(90deg) scaleY(2.5) scaleX(1.5);
+transform: rotate(90deg) scaleY(2.5) scaleX(1.5);
+width: 30px;
+height: 30px;
+text-align: center;
+line-height: 30px;
+margin: 0 auto;
+cursor: pointer;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-downTick.hide {
+display: none;
+}
+@media screen and (max-width: 750px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-downTick {
+font-size: 24px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-descHidden {
+opacity: 0;
+-webkit-transform: translateY(100px);
+-ms-transform: translateY(100px);
+transform: translateY(100px);
+-webkit-transition: ease-in-out 0.3s;
+-o-transition: ease-in-out 0.3s;
+transition: ease-in-out 0.3s;
+pointer-events: none;
+width: 90%;
+margin: 0 auto;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__content-descHidden.show {
+opacity: 1;
+-webkit-transform: translateY(0px);
+-ms-transform: translateY(0px);
+transform: translateY(0px);
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-ash__sectionBreakImg {
+  max-width: 100%;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze {
+  padding: 40px;
+  background-color: #25387e;
+  margin-top: -300px;
+}
+
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__containerBtn {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  display: block;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__container {
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  max-height: 600px;
+  animation: showTable .5s alternate;
+}
+
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-removeIngr {
+  display: none;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-showIngr {
+  display: block;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__titleBtn {
+  text-align: center;
+  text-transform: uppercase;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__title {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-between;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__title--subTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__desc {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.3256653003) 0%,
+    rgb(37, 56, 126) 100%
+  );
+  padding: 40px;
+}
+
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__ingr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #fff;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__ingr--ash {
+  border-bottom: none;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__name {
+  max-width: 60%;
+  font-size: 14px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__name p {
+  font-size: 12px;
+  padding: 0 10px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__dosage {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  padding: 0 20px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__claim {
+  padding: 0 40px;
+  font-size: 11px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__logoImg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__logoImg img {
+  max-width: 100%;
+  width: 400px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__logoImg h2 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin-top: 40px;
+  text-align: center;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__iconCtn {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__iconSingle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__iconSingle img {
+  width: 140px;
+  border-radius: 50%;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__iconSingle img:hover {
+  -webkit-animation: pulse_anim 2s ease-in-out infinite;
+  animation: pulse_anim 2s ease-in-out infinite;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-doze__iconSingle--title {
+  text-align: center;
+  font-size: 14px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-cross {
+  background-color: #00b1b8;
+  padding-bottom: 40px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-cross__mainTitle {
+  width: 100%;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-cross__mainTitle h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-cross__mainCtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  border-bottom: 4px solid #fff;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-cross__singlePrd {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-cross__singlePrd img {
+  max-width: 100%;
+  width: 300px;
+  transition: ease-in-out 0.3s;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-cross__singlePrd img:hover {
+  transform: scale(1.1);
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-cross__singlePrd p {
+  text-transform: uppercase;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-cross__singlePrd--second {
+  position: relative;
+  max-width: 220px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-cross__singlePrd--second p{
+  font-size: 14px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-cross__singlePrd--second img {
+  max-width: 100%;
+  width: 245px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-cross__Newness {
+  background-color: #fff;
+  color: #a41e37;
+  padding: 5px 20px;
+  position: absolute;
+  font-size: 20px;
+  font-weight: bolder;
+  top: -50px;
+  right: -68px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-cross__link {
+  background-color: #a41e37;
+  text-transform: capitalize;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 40px;
+  text-decoration: none;
+  -webkit-animation: es-pulse2 2s infinite;
+  animation: es-pulse2 2s infinite;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-cross__link:hover {
+  background: #d12727;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-cross__addText {
+  width: 100%;
+  align-self: flex-end;
+  text-align: end;
+  text-transform: uppercase;
+  padding: 20px;
+  font-size: 25px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-cross__secondCtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-cross__img100 {
+  position: relative;
+  z-index: 0;
+}
+
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 #es-cross__img100 {
+  position: absolute;
+  width: 70px;
+  z-index: 10;
+  right: 20px;
+  top: 10px;
+  -webkit-animation: es-pulse3 2s infinite;
+  animation: es-pulse3 2s infinite;
+}
+
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-footer {
+position: relative;
+background-color: #25387e;
+color: #fff;
+position: relative;
+width: 100%;
+top: 0px;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-footer__stripe {
+width: 100%;
+height: 8px;
+background-color: #fff;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-footer__textCnt {
+width: 100%;
+padding: 50px 60px 50px 40px;
+}
+@media screen and (max-width: 750px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-footer__textCnt {
+padding: 30px;
+margin-bottom: 14px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-footer_textItem {
+margin: 0;
+padding: 0;
+line-height: inherit;
+color: inherit;
+font-family: inherit;
+font-weight: inherit;
+font-weight: 300;
+font-size: 12px;
+line-height: 1;
+}
+@media screen and (max-width: 750px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-footer_textItem {
+font-size: 11px;
+}
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-footer__bottomCnt {
+margin: 40px 0 0 0;
+}
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-footer_textBottomItem {
+margin: 0;
+padding: 0;
+line-height: inherit;
+color: inherit;
+font-family: inherit;
+font-weight: inherit;
+font-weight: 300;
+font-size: 14px;
+margin-bottom: 10px;
+}
+@media screen and (max-width: 750px) {
+#es-magneB6-ZIS-1.es-magneB6-ZIS-1 .es-footer_textBottomItem {
+font-size: 13px;
+}
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="es-magneB6-ZIS-1" id="es-magneB6-ZIS-1">
+      <div class="es-kv">
+        <div class="es-kv__marginCnt"></div>
+        <div class="es-kv__bg">
+          <img src="./img/kv_bg.webp" alt="powiatalny obraz strony" class="es-kv__bgImg"/>
+        </div>
+        <div class="es-kv__mainContent">
+          <div class="es-kv__titleCnt">
+            <p class="es-kv__titleItem">Wzmocnij</p>
+            <p class="es-kv__titleItem">ODPORNOŚĆ</p>
+            <div class="es-kv__subTitle">
+              <p class="es-kv__subTitleItem">NA</p>
+              <p class="es-kv__subTitleItem">STRES</p>
+            </div>
+          </div>
+          <div class="es-kv__imgCnt">
+            <div class="es-kv__plant">
+              <img src="./img/ash_bg_plant.webp" alt="" class="es-kv__plantImg"/>
+            </div>
+            <div class="es-kv__product">
+              <img src="./img/KV_product_magne.webp" alt="" class="es-kv__productImg"/>
+            </div>
+            <img src="./img/kv_leaf.webp" alt="Magne-B6 feature" data-tick="1" data-type="kv" class="es-kv__content-tick es-kv__content-tick-1 active"/>
+            <img src="./img/kv_leaf_line.webp" alt="ASHWAGANDHA feature" class="es-kv__content-tick-line es-kv__content-tick-line--show es-kv__content-tick-line-1" data-line="1"/>
+            <div class="es-kv__content-tick-text es-kv__content-tick-text--show es-kv__content-tick-text-1" data-text="1">
+              <h3 class="es-kv__content-tick-title">ASHWAGANDHA</h3>
+              <p class="es-kv__content-tick-desc">
+                Długofalowo przyczynia się do odporności organizmu na stres.
+                Pomaga utrzymać relaksację, dobre samopoczucie psychiczne, jak
+                również wspiera fizyczną witalność organizmu.
+              </p>
+            </div>
+
+            <img src="./img/kv_mg.webp" alt="Magne-B6 feature" data-tick="2" data-type="kv" class="es-kv__content-tick es-kv__content-tick-2"/>
+            <img src="./img/kv_mg_line.webp" alt="ASHWAGANDHA feature" class="es-kv__content-tick-line es-kv__content-tick-line-2" data-line="2"/>
+            <div class="es-kv__content-tick-text es-kv__content-tick-text-2" data-text="2">
+              <h3 class="es-kv__content-tick-title">
+                WYSOCE PRZYSWAJALNY MAGNEZ
+              </h3>
+              <p class="es-kv__content-tick-desc">
+                w postaci cytrynianu magnezu<sup> 1</sup>
+                przyczynia się do zmniejszenia uczucia zmęczenia i znużenia oraz
+                pomaga w prawidłowym funkcjonowaniu układu nerwowego<sup
+                  >2</sup>.
+              </p>
+            </div>
+
+            <img src="./img/kv_mb6.webp" alt="Magne-B6 feature" data-tick="3" data-type="kv" class="es-kv__content-tick es-kv__content-tick-3"/>
+            <img src="./img/kv_mb6_line.webp" alt="ASHWAGANDHA feature" class="es-kv__content-tick-line es-kv__content-tick-line-3" data-line="3"/>
+            <div class="es-kv__content-tick-text es-kv__content-tick-text-3" data-text="3">
+              <h3 class="es-kv__content-tick-title">
+                WITAMINA B<sub class="es-GEN__sub">6</sub>
+              </h3>
+              <p class="es-kv__content-tick-desc">
+                Pomaga w utrzymaniu prawidłowych funkcji psychologicznych<sup
+                  >2</sup>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="es-ben">
+        <div class="es-ben__marginCnt"></div>
+        <div class="es-ben__bg">
+          <img src="./img/benefit_bg.webp" alt="" class="es-kv__bgImg"/>
+        </div>
+        <div class="es-ben__elements">
+          <div class="es-ben__elementCnt">
+            <div class="es-ben__iconImgCnt">
+              <img alt="" class="es-ben__iconImg" src="./img/benefit_badge_1.webp"/>
+            </div>
+            <p class="es-ben__elementTitle es-ben__firstTitle">
+              Miesiąc stosowania
+            </p>
+          </div>
+          <div class="es-ben__elementCnt">
+            <div class="es-ben__iconImgCnt es-ben-middle">
+              <img alt="" class="es-ben__iconImg" src="./img/benefit_badge_2Circle.webp"/>
+            </div>
+            <img alt="" class="es-ben__iconImg es-ben-pill" src="./img/benefit_badge_2shadow.webp"/>
+            <p class="es-ben__elementTitle">Wygodne dawkowanie</p>
+          </div>
+          <div class="es-ben__elementCnt">
+            <div class="es-ben__iconImgCnt">
+              <img alt="" class="es-ben__iconImg" src="./img/benefit_badge_3.webp"/>
+            </div>
+            <p class="es-ben__elementTitle es-ben__thirdTitle">
+              Gwarancja jakości <sup>3</sup>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="es-ash">
+        <div class="es-ash__marginCnt"></div>
+        <div class="es-ash__bg">
+          <img src="./img/ash_bg.webp" alt="powitalny obraz strony" class="es-ash__bgImg"/>
+        </div>
+        <div class="es-ash__content">
+          <div class="es-ash__content-images">
+            <h3 class="es-ash__content-title">ASHWAGANDHA</h3>
+            <img src="./img/ash_bg_plant.webp" alt="ASHWAGANDHA" class="es-ash__content-plant"/>
+            <img src="./img/tick.webp" alt="ASHWAGANDHA feature" data-tick="1" data-type="ash" class="es-ash__content-tick es-ash__content-tick-1 active"/>
+            <img src="./img/ash_line_1.webp" alt="ASHWAGANDHA feature" class="es-ash__content-tick-line es-ash__content-tick-line--show es-ash__content-tick-line-1" data-line="1"/>
+            <p class="es-ash__content-tick-text es-ash__content-tick-text--show es-ash__content-tick-text-1" data-text="1">Wspomaga radzenie sobie ze stresem<sup> 6</sup>.</p>
+
+            <img src="./img/tick.webp" alt="ASHWAGANDHA feature" data-tick="2" data-type="ash" class="es-ash__content-tick es-ash__content-tick-2"/>
+            <img src="./img/ash_line_2.webp" alt="ASHWAGANDHA feature" class="es-ash__content-tick-line es-ash__content-tick-line-2" data-line="2"/>
+            <p class="es-ash__content-tick-text es-ash__content-tick-text-2" data-text="2">Pomaga utrzymać relaks i dobre <br> samopoczucie psychiczne<sup> 7</sup>.</p>
+
+            <img src="./img/tick.webp" alt="ASHWAGANDHA feature" data-tick="3" data-type="ash" class="es-ash__content-tick es-ash__content-tick-3"/>
+            <img src="./img/ash_line_5.webp" alt="ASHWAGANDHA feature" class="es-ash__content-tick-line es-ash__content-tick-line-3" data-line="3"/>
+            <p class="es-ash__content-tick-text es-ash__content-tick-text-3" data-text="3">
+              Poprawia stabilność emocjonalną<sup> 10</sup>.</p>
+
+            <img src="./img/tick.webp" alt="ASHWAGANDHA feature" data-tick="4" data-type="ash" class="es-ash__content-tick es-ash__content-tick-4"/>
+            <img src="./img/ash_line_3.webp" alt="ASHWAGANDHA feature" class="es-ash__content-tick-line es-ash__content-tick-line-4" data-line="4"/>
+            <p class="es-ash__content-tick-text es-ash__content-tick-text-4" data-text="4">
+              Wspiera witalność organizmu<sup> 8</sup>.</p>
+
+            <img src="./img/tick.webp" alt="ASHWAGANDHA feature" data-tick="5" data-type="ash" class="es-ash__content-tick es-ash__content-tick-5"/>
+            <img src="./img/ash_line_4.webp" alt="ASHWAGANDHA feature" class="es-ash__content-tick-line es-ash__content-tick-line-5" data-line="5"/>
+            <p class="es-ash__content-tick-text es-ash__content-tick-text-5" data-text="5">
+              Pomaga utrzymać poczucie energii<sup> 9</sup>.
+            </p>
+          </div>
+          <div class="es-ash__content-texts">
+            <p class="es-ash__content-desc">
+              <i>Withania somnifera</i>, znana również jako ashwagandha
+              (żeń-szeń indyjski) jest adaptogenem roślinnym cenionym ze względu
+              na zdolność do wspierania organizmu w walce ze stresem.
+            </p>
+            <p class="es-ash__content-downTick">></p>
+            <p class="es-ash__content-descHidden">
+              Adaptogeny to składniki ziołowe o znanych właściwościach
+              antystresowych. Adaptogeny w sposób nieswoisty zwiększają zdolność
+              organizmu do przystosowania się do niekorzystnych czynników
+              środowiskowych (stresorów).<sup>4,5</sup>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="es-doze">
+        <div class="es-doze__containerBtn" style="display: block;">
+          <div class="es-doze__titleBtn">
+            <p>Sprawdź skład</p>
+          </div>
+        </div>
+        <div class="es-doze__container">
+          <div class="es-doze__title">
+            <div class="es-doze__title--ingr">
+              <p>składniki</p>
+            </div>
+            <div class="es-doze__title--subTitle">
+              <p>w 1 tabletce</p>
+              <p>RWS*</p>
+            </div>
+          </div>
+          <div class="es-doze__desc">
+            <div class="es-doze__ingr">
+              <div class="es-doze__name">
+                <h2>Magnez</h2>
+              </div>
+              <div class="es-doze__dosage">
+                <p class="es-doze__mg">60mg</p>
+                <p class="es-doze__rws">16%</p>
+              </div>
+            </div>
+            <div class="es-doze__ingr">
+              <div class="es-doze__name">
+                <h2>Witamina B<sub>6</sub></h2>
+              </div>
+              <div class="es-doze__dosage">
+                <p class="es-doze__mg">1,4mg</p>
+                <p class="es-doze__rws">100%</p>
+              </div>
+            </div>
+            <div class="es-doze__ingr es-doze__ingr--ash">
+              <div class="es-doze__name">
+                <h2>Wyciąg z korzenia ashwagandhy</h2>
+                <p>
+                  standaryzowany na 5% witanolidów (Withania somnifera) w
+                  przeliczeniu na suchą masę rośliny
+                </p>
+              </div>
+              <div class="es-doze__dosage">
+                <p class="es-doze__mg">
+                  80mg <br />
+                  2000mg
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="es-doze__claim">
+            *Referencyjna wartość spożycia dla osób dorosłych
+          </p>
+        </div>
+        <div class="es-doze__logoImg">
+          <img src="/img/for_product_logo.webp" alt="" />
+          <h2>przeznaczony jest szczególnie dla:</h2>
+        </div>
+        <div class="es-doze__iconCtn">
+          <div class="es-doze__iconSingle">
+            <img src="/img/for_icon1.webp" alt="" />
+            <p class="es-doze__iconSingle--title">
+              Osób narażonych na <br />stres w pracy
+            </p>
+          </div>
+          <div class="es-doze__iconSingle">
+            <img src="/img/for_icon2.webp" alt="" />
+            <p class="es-doze__iconSingle--title">
+              Rodziców, którzy <br />
+              potrzebują wsparcia w <br />
+              codziennych zadaniach
+            </p>
+          </div>
+          <div class="es-doze__iconSingle">
+            <img src="/img/for_icon3.webp" alt="" />
+            <p class="es-doze__iconSingle--title">
+              Osób, które chcą <br />
+              wzmocnić odporność <br />
+              na stres
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="es-cross">
+        <img
+          class="es-ash__sectionBreakImg"
+          src="/img/benefit_bg_cut.webp"
+          alt=""
+        />
+        <div class="es-cross__mainTitle">
+          <h2>Sprawdź suplementy diety z rodziny Magne-B<sub>6</sub></h2>
+        </div>
+        <div class="es-cross__mainCtn">
+          <div class="es-cross__singlePrd">
+            <img src="/img/cross_row1_item1.webp" alt="" />
+            <p>Magne B<sub>6</sub><sup>®</sup> Zmęczenie i stres</p>
+            <a class="es-cross__link" href="https://www.apteka-melissa.pl/produkt/magne-b6-zmeczenie-i-stres-30-tabl-1-szt,58888.html" target="_blank">sprawdź</a>
+          </div>
+          <div class="es-cross__singlePrd">
+            <img src="/img/cross_row1_item2.webp" alt="" />
+            <p>Magne-B<sub>6</sub><sup>®</sup> Max</p>
+            <a class="es-cross__link" href="https://www.apteka-melissa.pl/produkt/magne-b6-max-50-tabl,1385.html" target="_blank">sprawdź</a>
+          </div>
+          <p class="es-cross__addText">Suplement diety</p>
+        </div>
+        <div class="es-cross__mainTitle">
+          <h2>Sprawdź leki otc z rodziny Magne-B<sub>6</sub></h2>
+        </div>
+        <div class="es-cross__secondCtn">
+          <div class="es-cross__singlePrd es-cross__singlePrd--second">
+            <img src="/img/cross_row2_item1.webp" alt="" />
+            <p>Magne-B<sub>6</sub><sup>®</sup></p>
+            <a class="es-cross__link" href="https://www.apteka-melissa.pl/produkt/magne-b6-60-tabl,67420.html" target="_blank">sprawdź</a>
+          </div>
+          <div class="es-cross__singlePrd es-cross__singlePrd--second">
+            <img src="/img/cross_row2_item2.webp" alt="" />
+            <p>Magne-B<sub>6</sub><sup>®</sup> forte 60 tab.</p>
+            <a class="es-cross__link" href="https://www.apteka-melissa.pl/produkt/magne-b6-forte-60-tabl,26882.html" target="_blank">sprawdź</a>
+          </div>
+          <div class="es-cross__singlePrd es-cross__singlePrd--second">
+            <p class="es-cross__Newness">Nowość</p>
+            <img src="/img/cross_info.webp" alt="" id="es-cross__img100" />
+            <img
+              src="/img/cross_row2_item3.webp"
+              alt=""
+              class="es-cross__img100"
+            />
+            <p>Magne-B<sub>6</sub><sup>®</sup> forte 100 tab.</p>
+            <a class="es-cross__link" href="https://www.apteka-melissa.pl/produkt/magne-b6-forte-100-tabl,71382.html" target="_blank">sprawdź</a>
+          </div>
+        </div>
+        <div class="es-line"></div>
+      </div>
+
+      <div class="es-footer">
+        <div class="es-footer__textCnt">
+          <p class="es-footer_textItem">
+            <sup class="es-footer__sup">1.</sup> Dotyczy cytrynianu magnezu,
+            Ranade VV. Bioavailability and pharmacokinetics of magnesium after
+            administration of magnesium salts to humans. Am J Ther. 2001
+            Sep-Oct;8(5):345-57.
+          </p>
+          <p class="es-footer_textItem">
+            <sup class="es-footer__sup">2.</sup>ROZPORZĄDZENIE KOMISJI (UE) NR
+            432/2012 z dnia 16 maja 2012r. ustanawiające wykaz dopuszczonych
+            oświadczeń zdrowotnych dotyczących żywności, innych niż oświadczenia
+            odnoszące się do zmniejszenia ryzyka choroby oraz rozwoju i zdrowia
+            dzieci.
+          </p>
+          <p class="es-footer_textItem">
+            <sup class="es-footer__sup">3.</sup> Wysoka jakość suplementu diety
+            i zawartość jego składników została potwierdzona na podstawie analiz
+            mikrobiologicznych i fizykochemicznych oraz analiz zawartości
+            składników aktywnych przeprowadzonych na dzień 08.12.2020 po 6
+            miesiącach przechowywania, EuroPharma Alliance Sp. z o.o. Al. LED 1
+            55-020 Rzeplin 09.12.2020.
+          </p>
+          <p class="es-footer_textItem">
+            <sup class="es-footer__sup">4.</sup> Ashwagandha poprawia odporność
+            organizmu na stres (ID 4194).
+          </p>
+          <p class="es-footer_textItem">
+            <sup class="es-footer__sup">5.</sup> Jędrzejek M, Mastalerz-Migas A,
+            Bieńkowski P, et al. Stosowanie preparatów magnezu w praktyce
+            lekarza rodzinnego. Lekarz POZ. 2021;7(2).
+          </p>
+          <p class="es-footer_textItem">
+            <sup class="es-footer__sup">6.</sup> Ashwagandha pomaga organizmowi
+            radzić sobie ze stresem (ID 4194).
+          </p>
+          <p class="es-footer_textItem">
+            <sup class="es-footer__sup">7.</sup> Ashwagandha pomaga w utrzymaniu
+            relaksu, dobrego samopoczucia fizycznego i psychicznego (ID 2183).
+          </p>
+          <p class="es-footer_textItem">
+            <sup class="es-footer__sup">8.</sup> Ashwagandha pomaga zachować
+            optymalną wytrzymałość, poczucie energii i witalności, dobre
+            samopoczucie fizyczne i psychiczne (ID4195).
+          </p>
+          <p class="es-footer_textItem">
+            <sup class="es-footer__sup">9.</sup> Ashwagandha pomaga zachować
+            optymalną wytrzymałość, poczucie energii i witalności, dobre
+            samopoczucie fizyczne i psychiczne (ID4195).
+          </p>
+          <p class="es-footer_textItem">
+            <sup class="es-footer__sup">10.</sup> Ashwagandha pomaga utrzymać
+            stabilność emocjonalną (ID 4194).
+          </p>
+
+          <div class="es-footer__bottomCnt">
+            <p class="es-footer_textBottomItem">
+              Opella Healthcare Poland Sp. z o.o.
+            </p>
+            <p class="es-footer_textBottomItem">MAT-PL-2200517-1.0-03/2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+    
+      const esDozeTable = document.querySelector('.es-doze__container');
+      const esDozeBtn = document.querySelector('.es-doze__containerBtn');
+      const esDozeTitleBtn = document.querySelector('.es-doze__title');
+       
+      const showTable = () => {
+        esDozeTable.style.display = 'block'
+        esDozeBtn.style.display = 'none'
+      }
+
+      const hideTable = () => {
+        esDozeTable.style.display = 'none'
+        esDozeBtn.style.display = 'block'
+      }
+
+      const toggleTable = () => {
+        if( esDozeBtn.style.display === 'block'){
+          showTable()
+        } else {
+          hideTable()
+        }
+      }
+
+      esDozeBtn.addEventListener ('click', () => (
+        toggleTable()
+      ))
+      esDozeTitleBtn.addEventListener ('click', () => (
+        toggleTable()
+      ))
+
+
+    </script>
+    <script>
+
+
+
+const tickes = [
+  ...document.querySelectorAll(
+    "#es-magneB6-ZIS-1 .es-ash .es-ash__content-tick"
+  ),
+];
+
+const showTickDesc = (e) => {
+  const type = e.target.dataset.type;
+  const lines = [
+    ...document.querySelectorAll(
+      `#es-magneB6-ZIS-1 .es-${type} .es-${type}__content-tick-line`
+    ),
+  ];
+  const texts = [
+    ...document.querySelectorAll(
+      `#es-magneB6-ZIS-1 .es-${type} .es-${type}__content-tick-text`
+    ),
+  ];
+  lines.forEach((el) =>
+    el.classList.remove(`es-${type}__content-tick-line--show`)
+  );
+  texts.forEach((el) =>
+    el.classList.remove(`es-${type}__content-tick-text--show`)
+  );
+  tickes.forEach((el) => el.classList.remove("active"));
+  kvTicks.forEach((el) => el.classList.remove("active"));
+
+  e.target.classList.add("active");
+
+  const tickNo = e.target.dataset.tick;
+
+  const currentLine = lines.filter((el) => el.dataset.line === tickNo);
+  currentLine[0].classList.add(`es-${type}__content-tick-line--show`);
+
+  const currentText = texts.filter((el) => el.dataset.text === tickNo);
+  currentText[0].classList.add(`es-${type}__content-tick-text--show`);
+};
+
+const ashTicks = [
+  ...document.querySelectorAll(
+    "#es-magneB6-ZIS-1 .es-ash .es-ash__content-tick"
+  ),
+];
+ashTicks.forEach((el) => el.addEventListener("click", showTickDesc));
+
+const downTick = document.querySelector(".es-ash__content-downTick");
+const descHidden = document.querySelector(".es-ash__content-descHidden");
+const ashContent = document.querySelector(".es-ash__content");
+
+downTick.addEventListener("click", () => {
+  descHidden.classList.toggle("show");
+  downTick.classList.add("hide");
+  ashContent.classList.add("move");
+});
+
+const kvTicks = [
+  ...document.querySelectorAll("#es-magneB6-ZIS-1 .es-kv .es-kv__content-tick"),
+];
+kvTicks.forEach((el) => el.addEventListener("click", showTickDesc));
+    </script>
+  </body>
+</html>
